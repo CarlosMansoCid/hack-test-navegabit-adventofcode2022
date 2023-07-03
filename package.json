@@ -1,0 +1,21 @@
+{
+  "name": "code-hack-navegabit-",
+  "version": "0.0.1",
+  "description": "Code hacks solutions",
+  "main": "index.js",
+  "repository": "https://github.com/CarlosMansoCid/code-hack-navegabit-.git",
+  "author": "CarlosMansoCid <carlosmanso12@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "dependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "jest": "^29.5.0"
+  },
+  "scripts": {
+    "test": "jest --watchAll"
+  }
+}
