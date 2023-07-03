@@ -15,7 +15,12 @@
     "@babel/preset-env": "^7.22.5",
     "jest": "^29.5.0"
   },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["json", "html"]
+  },
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage"
   }
 }
