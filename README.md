@@ -18,11 +18,19 @@ or
 ```Bash
     $ npm i 
 ```
-## run tests
+## run unit tests
 ```Bash
     $ yarn run test
 ```
 or
 ```Bash
     $ npm run test
+```
+## run coverage tests
+```Bash
+    $ yarn run coverage
+```
+or
+```Bash
+    $ npm run coverage
 ```
