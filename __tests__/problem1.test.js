@@ -23,7 +23,7 @@ describe('problem1', ()=>{
     // test('Must return [20000, 4000, 5000] (sum all elements between blank spaces)', ()=>{
     //     expect(caloriesCounter([10000, 10000,' ', 2000, 2000,' ', 5000])).toEqual([20000, 4000, 5000])
     // })
-    // test('Must return 20000', ()=>{
+    // test('Must return 20000 (return the bigest number)', ()=>{
     //     expect(caloriesCounter([10000, 10000,' ', 2000, 2000,' ', 5000])).toEqual(20000)
     // })
     test('Must return {elf: 1, calories: 20000} ', ()=>{
