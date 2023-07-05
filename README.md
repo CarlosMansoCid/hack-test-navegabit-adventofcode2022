@@ -1,6 +1,8 @@
 # Carlos Alberto Manso Cid
 # hack-test-navegabit-adventofcode2022 
-Solutions of the Advent of Code 2022
+Solutions of the Advent of Code 2022 <br/>
+This solutions dont follow the "right solution mode", in advent of code, the inputs was provided as a .txt file, in order of
+whrite a "closer than real work implementations" code, i work with native types of js like inputs.
 
 ## clone the project
 ```Bash
