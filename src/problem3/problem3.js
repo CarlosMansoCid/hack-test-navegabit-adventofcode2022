@@ -1,4 +1,9 @@
+import { validateArrayAndNotEmpty } from "../utils/validateArrayAndNotEmpty"
+
 export const rucksackLoader = (runsacks) =>{
+    
+    validateArrayAndNotEmpty(runsacks)
+
     let halfStrings = []
     let chars = []
     let total = 0
@@ -12,9 +17,6 @@ export const rucksackLoader = (runsacks) =>{
         }
 
     const regex = /^[a-zA-Z]{2,}$/
-
-    if(!Array.isArray(runsacks)){ throw new Error('The param must be a array') }
-    if(runsacks.length === 0 ){ throw new Error('The param cant be empty')}
 
     const values = runsacks.filter(value => regex.test(value) && value.length % 2 === 0)
     
