@@ -1,12 +1,13 @@
+import {validateArrayAndNotEmpty} from '../utils/validateArrayAndNotEmpty'
 export const duplicatedFieldsInspector = (fieldsList) =>{
 
+    
     let separatedFields = []
     let includedFields = []
     let numberOfIncludedFields = 0
     
     if (!fieldsList) throw new Error('fieldsList is required')
-    if (!Array.isArray(fieldsList)) throw new Error('fieldsList should be a array')
-    if (fieldsList.length === 0) throw new Error('fieldsList cant be empty')
+    validateArrayAndNotEmpty(fieldsList)
 
     const regex = /^[0-9]{1,}-[0-9]{1,}$/
     const filterFields = fieldsList.filter(field => regex.test(field) && field.length % 2 !== 0 )

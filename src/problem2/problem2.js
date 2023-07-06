@@ -1,7 +1,8 @@
+import { validateArrayAndNotEmpty } from "../utils/validateArrayAndNotEmpty"
+
 export const scoreCounter = (strategy) =>{
 
-    if(!Array.isArray(strategy)){ throw new Error('The param must be a array') }
-    if(strategy.length === 0 ){ throw new Error('The param cant be empty')}
+    validateArrayAndNotEmpty(strategy)
 
     let dataWithRightValues = []
     let score = 0

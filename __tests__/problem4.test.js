@@ -7,11 +7,11 @@ describe('Problem 4, duplicatedFieldsInspector', ()=>{
         expect(()=>duplicatedFieldsInspector()).toThrow('fieldsList is required')
     })
     test('Argument must be a array, trow if not', ()=>{
-        expect(()=>duplicatedFieldsInspector('fields')).toThrow('fieldsList should be a array')
-        expect(()=>duplicatedFieldsInspector([])).not.toThrow('fieldsList should be a array')
+        expect(()=>duplicatedFieldsInspector('fields')).toThrow('The param must be a array')
+        expect(()=>duplicatedFieldsInspector([])).not.toThrow('The param must be a array')
     })
     test('Argument cant be empty, trow if empty', ()=>{
-        expect(()=>duplicatedFieldsInspector([])).toThrow('fieldsList cant be empty')
+        expect(()=>duplicatedFieldsInspector([])).toThrow('The param cant be empty')
     })
     // test('Argument must be a array of strings', ()=>{
     //     expect(duplicatedFieldsInspector(['first', 'second', 34, {great: 'hi'} ])).toEqual(['first', 'second'])
